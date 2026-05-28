@@ -18,8 +18,9 @@ const firaCode = Fira_Code({
 });
 
 export const metadata = {
-  title: "Plot φ — Consola Operativa Corporativa | Plot Center SRL",
+  title: "Plot Center — Consola Operativa Corporativa",
   description: "Plataforma de misiones creativas para clientes, profesionales y directores de Plot Center SRL.",
+  icons: { icon: "/logo.png" },
 };
 
 export default function RootLayout({ children }) {

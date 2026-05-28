@@ -43,24 +43,22 @@ export function AppLayout({ children }) {
         style={{ flexShrink: 0 }}
       >
         <div>
-          {/* Futuristic Header Brand Block */}
+          {/* Brand Block */}
           <div className="p-8 border-b border-white/[0.04]">
-            <Link href="/" className="no-underline block">
-              <div
-                style={{
-                  background: `linear-gradient(135deg, ${C.or}, #FF3D00)`,
-                  boxShadow: `0 8px 30px rgba(255, 107, 0, 0.25)`,
-                  borderRadius: 12,
-                  padding: "18px",
-                  textAlign: "center",
-                  cursor: "pointer",
-                  transition: "all 0.3s cubic-bezier(0.16, 1, 0.3, 1)",
-                }}
-                className="hover:scale-[1.03] active:scale-[0.97] hover:shadow-orange-500/40"
-              >
-                <span style={{ color: "#000", fontWeight: 900, fontFamily: C.ff, fontSize: 20, letterSpacing: 2 }}>
-                  PLOT <span style={{ fontFamily: "serif" }}>φ</span>
-                </span>
+            <Link href="/" className="no-underline flex items-center gap-3 group">
+              <img
+                src="/logo.png"
+                alt="Plot Center"
+                style={{ height: 46, width: "auto", flexShrink: 0 }}
+                className="transition-transform duration-300 group-hover:scale-105"
+              />
+              <div className="leading-none">
+                <div style={{ fontFamily: C.ff, fontWeight: 900, fontSize: 18, color: "#fff", letterSpacing: 1.5 }}>
+                  PLOT CENTER
+                </div>
+                <div style={{ fontFamily: C.fm, fontSize: 9, color: C.muted, letterSpacing: 2.5, marginTop: 5, fontWeight: 700 }}>
+                  CONSOLA OPERATIVA
+                </div>
               </div>
             </Link>
           </div>
@@ -116,12 +114,10 @@ export function AppLayout({ children }) {
       {/* ── MOBILE RESPONSIVE TOP BAR & DRAWER ─────────────────────── */}
       <header className="lg:hidden border-b border-[#222530] bg-[#07080B] p-4 flex justify-between items-center sticky top-0 z-50">
         <Link href="/" className="no-underline">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded bg-[#FF6B00] flex items-center justify-center font-bold text-black text-sm">
-              φ
-            </div>
+          <div className="flex items-center gap-2.5">
+            <img src="/logo.png" alt="Plot Center" style={{ height: 30, width: "auto" }} />
             <span style={{ fontWeight: 900, fontFamily: C.ff, fontSize: 16, color: "#fff", letterSpacing: 1 }}>
-              PLOT φ
+              PLOT CENTER
             </span>
           </div>
         </Link>

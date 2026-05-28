@@ -155,21 +155,11 @@ export default function AdminPage() {
       {!login ? (
         <div className="max-w-md mx-auto py-16 space-y-8">
           <div className="text-center space-y-4">
-            <div
-              className="w-20 h-20 rounded-2xl flex items-center justify-center mx-auto relative"
-              style={{
-                background: `linear-gradient(135deg, ${C.or}, #FF3D00)`,
-                boxShadow: `0 12px 40px ${C.or}40`,
-              }}
-            >
-              <span style={{ color: "#000", fontWeight: 900, fontSize: 34, fontFamily: "serif" }}>φ</span>
-              <span
-                className="absolute -bottom-2 -right-2 w-8 h-8 rounded-lg flex items-center justify-center text-sm"
-                style={{ background: C.card2, border: `1px solid ${C.border2}` }}
-              >
-                🛡️
-              </span>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Plot Center"
+              style={{ height: 82, width: "auto", margin: "0 auto", display: "block", filter: `drop-shadow(0 10px 30px ${C.or}33)` }}
+            />
             <div className="space-y-1.5">
               <h2 className="font-extrabold text-2xl text-white tracking-tight">Panel de Control General</h2>
               <p style={{ fontFamily: C.fm, fontSize: 10, color: C.muted, letterSpacing: 2 }}>
